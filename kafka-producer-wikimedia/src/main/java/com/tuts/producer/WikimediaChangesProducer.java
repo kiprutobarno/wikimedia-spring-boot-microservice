@@ -10,10 +10,7 @@ import org.springframework.stereotype.Service;
 import com.launchdarkly.eventsource.EventHandler;
 import com.launchdarkly.eventsource.EventSource;
 
-import lombok.extern.slf4j.Slf4j;
-
 @Service
-@Slf4j
 public class WikimediaChangesProducer {
     @Autowired
     private KafkaTemplate<String, String> kafkaTemplate;
